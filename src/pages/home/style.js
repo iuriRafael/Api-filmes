@@ -13,7 +13,7 @@ export const MovieList = styled.ul`
     list-style: none;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    column-gap: 1rem;
+    column-gap: 2rem;
     row-gap: 4rem;
 `;
 
@@ -42,10 +42,10 @@ export const Movie = styled.li`
 
 export const Btn = styled.button`
     margin-top: 5px;
-    padding: 0.7rem 3rem;
+    padding: 0.7rem 2rem;
     border: none;
     color: #212121;
-    background-color: #ffffff;
+    background-color: #05ca73;
     font-weight: 1000;
     font-size: 12 px;
     cursor: pointer;

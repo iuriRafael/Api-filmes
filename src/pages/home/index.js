@@ -1,9 +1,11 @@
 import { useEffect, useState } from "react";
 import { Container, Movie, MovieList, Btn } from "./style";
 import { Link } from "react-router-dom";
-import Navbar from "../navbar";
-import Header from "../header";
-import SearchBar from "../SearchBar";
+// import Navbar from "../../componentes/navbar";
+import Header from "../../componentes/header";
+import SearchBar from "../../componentes/SearchBar";
+
+
 
 function Home() {
   const imagePath = "https://image.tmdb.org/t/p/w500";
@@ -25,10 +27,10 @@ function Home() {
         setMovies(data.results);
       });
   }, [KEY]);
-
+  
   return (
     <Container>
-      <Navbar />
+      {/* <Navbar /> */}
       <Header />
       <SearchBar onSearch={handleSearch} apiKey={KEY} />
       <MovieList>

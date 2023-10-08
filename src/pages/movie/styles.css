@@ -1,48 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Mooli&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mooli&display=swap');
+html, body {
+  margin: 0;
+  min-height: 100%;
+  margin: 0;
+ }
+ body {
+   font-family: Avenir, Arial, sans-serif;
+   color: #fff;
+   background: #000;
+ }
+ header {
+   background: #333;
+   padding: 1rem;
+ }
+ h1 {
+   font-weight: 100;
+ }
+ h1 span {
+   font-size: 1rem;
+ }
+ #movie {
+  margin-top: 5rem !important;
+   margin: 18rem;
+   width: 90%;
+   max-width: 45rem;
+   display: grid;
+   grid-template-columns: 1fr 2fr;
+   grid-gap: 2rem;
+  
+ }
+ #movie img {
+   width: 25vw;
+   border-radius: 26px !important;
+   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px !important;
+ }
+ .star {
+   letter-spacing: .5rem;
+   color: #ff0;
+ }  
+ .nonrate {
+   color: #444;
+ }
+ #content{
+  margin-left: auto;
+  margin-top: 5rem;
+  font-size: 1.5vw;
+  width: 30vw;
+  
+ }
+ .titulo{
+  margin-bottom: 2rem;
+  font-size: 4vw;
+  font-family: 'Mooli', sans-serif;
+ }
+ .data{
+  margin-bottom: 2rem;
+ }
+ .movie-desc{
+  font-family: 'Mooli', sans-serif;
+  width: 45vw;
+ }
 
-.ordem{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    padding: 60px;
-
-    
+.button-75 {
+  align-items: center;
+  background-image: linear-gradient(135deg, #05ca73 40%, #4e9146);
+  border: 0;
+  border-radius: 10px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  font-family: "Codec cold",sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  height: 45px;
+  justify-content: center;
+  letter-spacing: .4px;
+  line-height: 1;
+  max-width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 3px;
+  text-decoration: none;
+  text-transform: uppercase;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
 }
 
-.container{
-    padding: 60px;
+.io{
+  margin-top: 2rem;
+ justify-content: center;
+  display: flex;
 }
 
-.img_movie {
-    width: 40%; 
-    max-width: 300px; 
-    margin-right: 20px; 
-  }
+.button-75:active {
+  outline: 0;
+}
 
-  
-  h1 {
-    font-size: 24px;
-    margin: 0; 
-  }
-  
-  h3 {
-    font-size: 18px;
-    margin-top: 10px; 
-  }
-  
-  
-  .descricao {
-    margin-top: 20px; 
-  }
+.button-75:hover {
+  outline: 0;
+}
 
-  .link_button{
-    margin-top: 20px;
-    padding: 10px;
+.button-75 span {
+  transition: all 200ms;
+  text-decoration: none !important;
 
-  }
+}
 
-  @media (max-width: 768px){
-    .ordem{
-        flex-direction: column;
-    }
+.button-75:hover span {
+  transform: scale(.9);
+  opacity: .75;
+}
+
+
+
+@media screen and (max-width: 800px) {
+
+  @import url('https://fonts.googleapis.com/css2?family=Mooli&display=swap');
+html, body {
+  margin: 0;
+  min-height: 100%;
+  margin: 0;
+}
+body {
+  font-family: Avenir, Arial, sans-serif;
+  color: #fff;
+  background: #000;
+}
+header {
+  background: #333;
+  padding: 1rem;
+}
+h1 {
+  font-weight: 100;
+}
+h1 span {
+  font-size: 1rem;
+}
+#movie {
+  margin-top: 5rem !important;
+  margin: 1rem; /* Reduzi a margem para telas menores */
+  width: 90%;
+  max-width: 45rem;
+  display: grid;
+  grid-template-columns: 1fr; /* Alterei para uma única coluna em telas menores */
+  grid-gap: 2rem;
+}
+#movie img {
+  width: 100%; /* A imagem ocupa 100% da largura do contêiner */
+  border-radius: 26px !important;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px !important;
+}
+.star {
+  letter-spacing: .5rem;
+  color: #ff0;
+}
+.nonrate {
+  color: #444;
+}
+#content {
+  margin-left: auto;
+  margin-top: 1rem; /* Reduzi a margem superior para telas menores */
+  font-size: 1.5vw;
+  width: 90%; /* Aumentei a largura para telas menores */
+}
+.titulo {
+  margin-bottom: 2rem;
+  font-size: 20px;
+  font-family: 'Mooli', sans-serif;
+  text-align: center;
+}
+.data {
+  margin-bottom: 2rem;
+  font-size: 15px;
+  text-align: center;
+}
+.movie-desc {
+  font-family: 'Mooli', sans-serif;
+  width: 100%; 
+  font-size: 10px;
+}
+.button-75 {
+  /* Estilos do botão permanecem os mesmos */
+}
+@media screen and (max-width: 991px) {
+  .button-75 {
+    font-size: 15px;
+    height: 50px;
   }
+  .button-75 span {
+    line-height: 50px;
+  }
+}
+a {
+  text-decoration: none;
+}
+
+
+}

@@ -24,37 +24,31 @@ const Movie = () => {
       }); // eslint-disable-next-line
   }, []);
 
-  const [favorites, setFavorites] = useState([]); // Estado para armazenar filmes favoritos
-
-  // Função para adicionar um filme à lista de favoritos
-  const addToFavorites = () => {
-    if (!favorites.some((fav) => fav.id === movie.id)) {
-      setFavorites([...favorites, movie]);
-    }
-  };
-
   return (
-    <div className="ordem">
+    <div className="movie-container">
+
+    <div id="movie">
+	    <a href="#">
       <img
-        className="img_movie"
-        src={`${imagePath}${movie.poster_path}`}
-        alt="{movie.title}"
-      />
-      <div className="container">
-        <h1>{movie.title}</h1>
-        <h3>Data de lançamento: {movie.release_date}</h3>
+          className="img_movie"
+          src={`${imagePath}${movie.poster_path}`}
+          alt={movie.title}
+        />
+	    </a>
+	    <div id="content">
+      <h1 className="titulo">{movie.title}</h1>
+        <h4 className="data">Data de lançamento: {movie.release_date}</h4>
         <div className="descricao">
-          <h4>Descrição: </h4>
           <p className="movie-desc">{movie.overview}</p>
         </div>
-        <Link to="/">
-          <button className="link_button">Voltar</button>
+        <Link to="/" className="io">
+        <button class="button-75" role="button"><span class="text">Voltar</span></button>
         </Link>
-        <button onClick={addToFavorites} className="link_button">
-          Salvar Filme
-        </button>
-      </div>
+	    </div>
     </div>
+    </div>
+
+    
   );
 };
 
