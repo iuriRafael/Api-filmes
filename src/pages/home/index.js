@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Container, Movie, MovieList, Btn } from "./style";
 import { Link } from "react-router-dom";
-// import Navbar from "../../componentes/navbar";
+import Navbar from "../../componentes/navbar";
 import Header from "../../componentes/header";
 import SearchBar from "../../componentes/SearchBar";
 
@@ -30,7 +30,7 @@ function Home() {
   
   return (
     <Container>
-      {/* <Navbar /> */}
+      <Navbar />
       <Header />
       <SearchBar onSearch={handleSearch} apiKey={KEY} />
       <MovieList>
