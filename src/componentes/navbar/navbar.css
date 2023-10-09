@@ -4,18 +4,12 @@
     box-sizing: border-box;
   }
   
-  body {
-    background-color: #121212;
-  }
+
   
-  /* Fonts: #A5A5A5 */
-  /* Green: #05ca73 */
-  /* Black: #121212 */
   
   header {
     width: 100%;
-    height: 60px;
-    background-color: #121212;
+    height: 70px;
     display: flex;
     align-items: center;
     justify-content: space-between;
